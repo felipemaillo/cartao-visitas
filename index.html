@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartão de Visitas</title>
+    <title id="title">Cartão de Visitas</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -28,10 +28,16 @@
         <span></span>
       </div>
       <ul id="links">
-        <li><a href="#" target="_blank">Conheça minha história</a></li>
-        <li><a href="#" target="_blank">Minha trajetória profissional</a></li>
-        <li><a href="#" target="_blank">Minhas Skills</a></li>
-        <li><a href="#" target="_blank">Meu Currículo</a></li>
+        <li>
+          <a id="btn1" href="#" target="_blank">Conheça minha história</a>
+        </li>
+        <li>
+          <a id="btn2" href="#" target="_blank"
+            >Minha trajetória profissional</a
+          >
+        </li>
+        <li><a id="btn3" href="#" target="_blank">Minhas Skills</a></li>
+        <li><a id="btn4" href="#" target="_blank">Meu Currículo</a></li>
       </ul>
       <div id="social-links">
         <a href="https://github.com/felipemaillo" target="_blank">
@@ -51,8 +57,17 @@
         </a>
       </div>
       <footer>
-        <span> Feito com ♥ por Felipe Maillo </span>
+        <span id="span-footer"> Feito com ♥ por Felipe Maillo </span>
         <p id="msg-kind-device"></p>
+        <button onclick="changeLanguage('ptbr')">
+          <img
+            src="./assets/brazil-flag.png"
+            alt="Idioma Português Brasileiro"
+          />
+        </button>
+        <button onclick="changeLanguage('eng')">
+          <img src="./assets/usa-flag.png" alt="Idioma Inglês Americano" />
+        </button>
       </footer>
     </div>
     <script
