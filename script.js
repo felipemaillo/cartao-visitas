@@ -12,3 +12,23 @@ function toggleMode() {
     img.setAttribute("alt", "Foto de Felipe Maillo segurando guitarra")
   }
 }
+function changeMsgKindDevice(screenWidth) {
+  if (screenWidth < 700) {
+    msg.innerHTML = "para seu dispositivo mobile"
+  } else {
+    msg.innerHTML = "para a WEB"
+  }
+}
+
+const msg = document.getElementById("msg-kind-device")
+
+changeMsgKindDevice(document.body.clientWidth)
+
+document.body.onresize = function () {
+  var screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth
+
+  changeMsgKindDevice(screenWidth)
+}
