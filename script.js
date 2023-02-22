@@ -24,6 +24,7 @@ var btn1 = document.getElementById("btn1")
 var btn2 = document.getElementById("btn2")
 var btn3 = document.getElementById("btn3")
 var btn4 = document.getElementById("btn4")
+var titlePage = document.getElementById("titlePage")
 
 var language = {
   eng: {
@@ -34,6 +35,7 @@ var language = {
     msgFooter1: "Make with ♥ by Felipe Maillo",
     msgFooter2Web: "for WEB",
     msgFooter2Mobile: "for your mobile device",
+    titlePage: "Business Card",
   },
 
   ptbr: {
@@ -44,6 +46,7 @@ var language = {
     msgFooter1: "Feito com ♥ por Felipe Maillo",
     msgFooter2Web: "para WEB",
     msgFooter2Mobile: "para seu dispositivo móvel",
+    titlePage: "Cartão de Visitas",
   },
 }
 
@@ -53,6 +56,7 @@ if (window.location.hash) {
     btn2.textContent = language.eng.btn2
     btn3.textContent = language.eng.btn3
     btn4.textContent = language.eng.btn4
+    titlePage.textContent = language.eng.titlePage
     msgFooter1.textContent = language.eng.msgFooter1
     msgFooter2.textContent = changeMsgKindDevice(
       document.body.clientWidth,
@@ -63,6 +67,7 @@ if (window.location.hash) {
     btn2.textContent = language.ptbr.btn2
     btn3.textContent = language.ptbr.btn3
     btn4.textContent = language.ptbr.btn4
+    titlePage.textContent = language.ptbr.titlePage
     msgFooter1.textContent = language.ptbr.msgFooter1
     msgFooter2.textContent = changeMsgKindDevice(
       document.body.clientWidth,
