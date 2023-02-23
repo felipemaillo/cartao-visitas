@@ -25,6 +25,10 @@
 
 ---
 
+Para ver como o projeto ficou, <a href="https://felipemaillo.github.io/cartao-visitas/#ptbr">Clique aqui</a>
+
+---
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
